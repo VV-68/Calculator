@@ -3,6 +3,7 @@
 A simple calculator built using HTML, CSS, and Vanilla JavaScript.
 Supports both button input and keyboard input.
 
+Live Demo: https://vv-68.github.io/Calculator/
 ## Features
 
 - Addition, subtraction, multiplication, division
