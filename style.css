@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100dvh;
+  min-height: 100svh;
+  overflow: hidden;
+
+  background-color: #ff9500;
+  padding: clamp(10px, 2vw, 20px);
+}
+
+.calculator {
+  background: #160202;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+
+  padding: clamp(16px, 2vw, 24px);
+  width: 100%;
+  max-width: 360px;
+  max-height: 100%;
+}
+
+.display {
+  width: 100%;
+  height: clamp(56px, 10vh, 70px);
+
+  border: none;
+  border-radius: 12px;
+  padding: 0 15px;
+
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  text-align: right;
+
+  margin-bottom: 16px;
+  font-weight: 300;
+  color: #333;
+
+  cursor: default;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(8px, 2vw, 12px);
+}
+
+.btn {
+  border: none;
+  border-radius: 12px;
+
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  font-weight: 500;
+
+  padding: clamp(16px, 3vw, 24px);
+
+  cursor: pointer;
+  transition: all 0.15s ease;
+
+  color: #333;
+  background: #f0f0f0;
+}
+
+.btn.number {
+  background: #21d5b1;
+}
+
+.btn.number:hover {
+  background: #f5f8f6;
+  transform: translateY(-2px);
+}
+
+.btn.number:active {
+  background: #d8d8d8;
+  transform: translateY(0);
+}
+
+.btn.operator {
+  background: #ff9500;
+}
+
+.btn.operator:hover {
+  background: #bb2ab6;
+  transform: translateY(-2px);
+}
+
+.btn.operator:active {
+  background: #e67e00;
+  transform: translateY(0);
+}
+
+.btn.clear {
+  background: #0e8b9ecf;
+  color: #ffffff;
+}
+
+.btn.clear:hover {
+  background: #dc1313;
+  transform: translateY(-2px);
+}
+
+.btn.clear:active {
+  background: #2fb74e;
+  transform: translateY(0);
+}
+
+.btn.equals {
+  background: #ff9500;
+  grid-row: span 2;
+}
+
+.btn.equals:hover {
+  background: #0ea23f;
+  transform: translateY(-2px);
+}
+
+.btn.equals:active {
+  background: #28a745;
+  transform: translateY(0);
+}
+
+.btn.zero {
+  grid-column: span 2;
+}

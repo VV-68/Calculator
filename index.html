@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <div class="calculator">
+        <input type="text" class="display" id="display" readonly>
+         <input type="text" class="display" id="display2" readonly>
+        <div class="buttons">
+            <button class="btn clear" id="clear" onclick="clearDisplay(0)" >C</button>
+            <button class="btn operator"  
+            onclick="
+                            addData('/');
+                    ">÷</button>
+                    
+            <button class="btn operator"  onclick="
+                            addData('x');
+            ">×</button>
+
+            <button class="btn operator" onclick="
+                            addData('-');
+            ">−</button>
+
+            <button class="btn number" 
+                onclick="
+                            addData('7');
+                        "
+            >7</button>
+            
+            <button class="btn number"
+                onclick="
+                            addData('8');
+                        "
+            >8</button>
+
+            <button class="btn number"
+                onclick="
+                            addData('9');
+                        "
+            >9</button>
+
+            <button class="btn operator" 
+                onclick="
+                            addData('+');
+                        "
+            >+</button>
+            
+            <button class="btn number"
+                onclick="
+                            addData('4');
+                        "
+            >4</button>
+
+            <button class="btn number"
+                onclick="
+                            addData('5');
+                        "
+            >5</button>
+
+            <button class="btn number"
+                onclick="
+                            addData('6');
+                        "
+            >6</button>
+
+            <button class="btn equals" id="equals"
+            onclick="calculate()">=</button>
+            
+            <button class="btn number"
+                onclick="
+                            addData('1');
+                        "
+            >1</button>
+
+            <button class="btn number"
+                onclick="
+                            addData('2');
+                        "
+            >2</button>
+
+            <button class="btn number" 
+                onclick="
+                            addData('3');
+                        "
+            >3</button>
+            
+            <button class="btn number zero"
+                onclick="
+                            addData('0');
+                        "
+            >0</button>
+
+            <button class="btn number"
+                onclick="
+                            addData('.');
+                        "
+            >.</button>
+            <button class="btn clear" onclick="clearDisplay(1)">AC</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
